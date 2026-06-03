@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfólio - Luiz Eduardo Albuquerque</title>
+    <title>Portfólio - Luiz Eduardo Albuquerque</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <button id="toggle-theme" title="alternar tema">🌙</button>
-        <h1>Luiz Eduardo Albuquerque Alves de Lima</h1>
-        <p>Estudante de Ciência da Computação | Full stack Developer em formação</p>
+        <button id="toggle-theme" title="Alternar tema">🌙</button>
+         <div class="header-content">
+            <img src="img/foto.jpeg" alt="Foto de Luiz Eduardo" class="foto-perfil">
+            <div class="header-texto">
+                <h1>Luiz Eduardo Albuquerque Alves de Lima</h1>
+                <p>Estudante de Ciência da Computação | Full Stack Developer em formação</p>
+            </div>
+        </div>
     </header>
+
+    <nav>
+        <a href="index.html" class="active">|Início|</a>
+        <a href="projetos.html">|Projetos|</a>
+    </nav>
 
     <main class="container">
 
@@ -21,18 +31,17 @@
             <h2>Sobre Mim</h2>
             <p>
                 Sou estudante de Ciência da Computação na CESAR School
-                e tenho grande interesse na área de desenvolvimento
-                full stack
+                e tenho grande interesse na área de desenvolvimento full stack.
             </p>
-            Atualmente estou aprofundando meus conhecimentos em JavaScript,
-            Node.Js, Python, HTML, CSS e lógica de programação, buscando
-            criar projetos e evoluir constantemente como desenvolvedor
             <p>
+                Atualmente estou aprofundando meus conhecimentos em JavaScript,
+                Node.js, Python, HTML, CSS e lógica de programação, buscando
+                criar projetos e evoluir constantemente como desenvolvedor.
+            </p>
         </section>
 
         <section class="card">
             <h2>Habilidades</h2>
-
             <div class="skills">
                 <div class="skill-box">Python</div>
                 <div class="skill-box">JavaScript</div>
@@ -45,46 +54,43 @@
 
         <section class="card">
             <h2>Projetos</h2>
-            <p>
-                <p> <a href="https://rickyydev.itch.io/sala-13" target="_blank">Jogo no-code feito em Bitsy Color</a> 
-                </p>
-                <p><a href="file:///C:/Users/odudu/OneDrive/Documentos/codes/calculoIMC/index.html" target="_blank">Site em que é calculado o IMC feito em JavaScript</a>
-                </p>
-            </p>
+            <p>Confira meus projetos na página dedicada:</p>
+            <a href="projetos.html" class="btn">Ver Projetos →</a>
         </section>
 
         <section class="card">
             <h2>Objetivos</h2>
             <p>
-                Meu principal objetivo é entrar no mercado de tecnologia como desenvolvedor full stack, construindo aplicações cada vez mais completas e robustas. Quero evoluir continuamente, contribuir em times de desenvolvimento e resolver problemas reais com código de qualidade.
+                Meu principal objetivo é entrar no mercado de tecnologia como desenvolvedor full stack,
+                construindo aplicações cada vez mais completas e robustas. Quero evoluir continuamente,
+                contribuir em times de desenvolvimento e resolver problemas reais com código de qualidade.
             </p>
         </section>
 
         <section class="card">
             <h2>Contato</h2>
             <p>
-                <a href="mailto:odudu04@outlook.com">
-                 Entre em contato comigo através do meu email
-                </a>
+                <a href="mailto:odudu04@outlook.com">Entre em contato pelo meu e-mail</a>
             </p>
             <p>GitHub:
                 <a href="https://github.com/Eduardo-Albuquerque1" target="_blank">
                     github.com/Eduardo-Albuquerque1
                 </a>
             </p>
-
-            <p>Linkedin
+            <p>LinkedIn:
                 <a href="https://www.linkedin.com/in/eduardoalbuquerque1/" target="_blank">
                     linkedin.com/in/eduardo-albuquerque
                 </a>
             </p>
-
-            <script src="script.js"></script>
         </section>
+
     </main>
 
+    <footer>
+        <p>© 2025 Luiz Eduardo Albuquerque — Desenvolvido para fins acadêmicos</p>
+    </footer>
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
