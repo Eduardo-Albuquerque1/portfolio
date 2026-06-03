@@ -1,28 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+:root {
+    --cor-fundo: white;
+    --cor-texto: #1e1e1e;
+    --cor-primaria: #2563eb;
+    --cor-card: #f5f5f5;
+}
+
+:root.dark-mode {
+    --cor-fundo: #121212;
+    --cor-texto: #e0e0e0;
+    --cor-primaria: #1a237e;
+    --cor-card: #1e1e1e;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0f172a;
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.5;
 }
 
-header{
-    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+header {
+    background: var(--cor-primaria);
     text-align: center;
     padding: 60px 20px;
+    position: relative;
 }
 
-header h1{
+header h1 {
     font-size: 45px;
     margin-bottom: 10px;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
@@ -31,76 +46,73 @@ header h1{
     gap: 25px;
 }
 
-.card{
-    background-color: #1e293b;
+.card {
+    background-color: var(--cor-card);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-5px);
 }
 
-.card h2{
+.card h2 {
     color: #60a5fa;
     margin-bottom: 20px;
     font-size: 2rem;
-    gap: 20px;
 }
 
-.skill{
+.skills {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 20px;
 }
 
-.skill-box{
+.skill-box {
     background-color: #2563eb;
-    padding: 10px 18px;
+    padding: 12px 20px;
     border-radius: 10px;
     font-weight: bold;
-    padding: 12px 20px;
     display: inline-block;
-    align-items: center;
-    width: auto;
-    gap: 20px;
-    flex: none;
-   
-
 }
 
-.skill-box:hover{
+.skill-box:hover {
     transform: scale(1.05);
-    gap: 20px;
 }
 
-.project{
+.project {
     margin-bottom: 25px;
 }
 
-.project h3{
+.project h3 {
     color: #93c5fd;
     margin-bottom: 10px;
 }
 
-a{
+a {
     color: #60a5fa;
     text-decoration: none;
 }
 
-@media (max-width: 768px){
+#toggle-theme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
-    header h1{
+@media (max-width: 768px) {
+    header h1 {
         font-size: 2.2rem;
     }
 
-    .card h2{
+    .card h2 {
         font-size: 1.6rem;
-        gap: 15px;
     }
-
 }
-
